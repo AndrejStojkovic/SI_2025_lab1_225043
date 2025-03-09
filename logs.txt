@@ -1,0 +1,15 @@
+*   2e50d1e (HEAD -> master, origin/master) Merge branch 'master' of https://github.com/AndrejStojkovic/SI_2025_lab1_225043
+|\
+| *   1d60b59 Merge pull request #11 from AndrejStojkovic/5-filter-tasks-by-category
+| |\
+| | * 76aeedc (origin/5-filter-tasks-by-category, 5-filter-tasks-by-category) Implement filterTasksByCategory
+| * |   64ecba2 Merge pull request #12 from AndrejStojkovic/7-count-tasks-per-category
+| |\ \
+| | |/
+| |/|
+| | * 78265fb (origin/7-count-tasks-per-category, 7-count-tasks-per-category) Implement countTasksPerCategory
+| |/
+* / 70e0025 (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Implement getCompletedTasks
+|/
+* 48c91c0 Add starter code
+* 08a2587 Initial commit
