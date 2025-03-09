@@ -87,7 +87,7 @@ class TaskManager {
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
         // TODO: Implement filtering logic
-        return new ArrayList<>();
+        return tasks.stream().filter(x -> x.getCategory().Equals(category)).collect(Collectors.toList());
     }
 
     // 6. Find the highest-priority unfinished task
@@ -99,7 +99,7 @@ class TaskManager {
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
         // TODO: Implement counting logic
-        return new HashMap<>();
+        return tasks.stream().collect(Collectors.groupingBy(Task::getCategory, Collectors.summingInt(x -> 1)));
     }
 
     // 8. Mark a task as completed by name
