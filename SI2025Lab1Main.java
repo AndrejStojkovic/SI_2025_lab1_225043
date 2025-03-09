@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 enum Priority {
     LOW, MEDIUM, HIGH
@@ -98,7 +99,7 @@ class TaskManager {
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
         // TODO: Implement counting logic
-        return new HashMap<>();
+        return tasks.stream().collect(Collectors.groupingBy(Task::getCategory, Collectors.summingInt(x -> 1)));
     }
 
     // 8. Mark a task as completed by name
